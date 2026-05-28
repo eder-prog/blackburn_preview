@@ -12,7 +12,7 @@
     <path d="M26 38 H36 Q40 38 40 42 Q40 45 36 45 Q40 45 40 49 Q40 52 36 52 H26 Z M26 38 V52" stroke-width="2.5" stroke-linejoin="round"></path>
   </g>
     <line x1="116" y1="96" x2="386" y2="96" stroke="#1A1F2C" stroke-opacity="0.5" stroke-width="1"></line>
-    <text x="116" y="80" font-family="&#39;Fraunces&#39;, &#39;Iowan Old Style&#39;, Georgia, serif" font-style="italic" font-weight="900" font-size="64" letter-spacing="-3" fill="#1A1F2C">blackburn</text>
-    <text x="116" y="114" font-family="&#39;Anton&#39;, &#39;Oswald&#39;, &#39;Arial Narrow&#39;, sans-serif" letter-spacing="1.4" font-size="9" fill="#1A1F2C" fill-opacity="0.92" text-transform="uppercase">GENERAL CONTRACTOR  Â·  GASTON SC</text>
+    <text x="116" y="80" font-family="'Inter', sans-serif" font-style="normal" font-weight="900" font-size="64" letter-spacing="-3" fill="#1A1F2C">blackburn</text>
+    <text x="116" y="114" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="1.4" font-size="9" fill="#1A1F2C" fill-opacity="0.92" text-transform="uppercase">GENERAL CONTRACTOR  Â·  GASTON SC</text>
   </g>
 </svg>

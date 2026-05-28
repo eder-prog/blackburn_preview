@@ -21,14 +21,19 @@ a { color: inherit; }
 button { font: inherit; cursor: pointer; }
 :focus-visible { outline: none; box-shadow: var(--sh-focus); border-radius: var(--r-sm); }
 
-/* --- Typography defaults --- */
+/* --- Typography defaults (Inter universal) --- */
 h1, h2 {
   font-family: var(--f-display);
-  font-style: italic;
-  font-weight: var(--fw-sem);
+  font-style: normal;
+  font-weight: 900;
   line-height: var(--lh-tight);
   letter-spacing: var(--ls-tight);
   margin: 0;
+}
+h1 em, h2 em {
+  font-style: italic;
+  font-weight: 900;
+  color: var(--accent);
 }
 h1 { font-size: var(--fs-6xl); }
 h2 { font-size: var(--fs-4xl); }
@@ -47,7 +52,7 @@ em { font-style: italic; }
   align-items: baseline;
   gap: var(--sp-2);
   font-family: var(--f-condensed);
-  font-weight: var(--fw-reg);
+  font-weight: 700;
   font-size: var(--fs-sm);
   text-transform: uppercase;
   letter-spacing: var(--ls-wider);
@@ -56,11 +61,12 @@ em { font-style: italic; }
 }
 .eyebrow__num {
   font-family: var(--f-mono);
-  font-weight: var(--fw-med);
+  font-weight: 500;
   font-size: var(--fs-sm);
   letter-spacing: 0;
   color: var(--accent-italic);
   font-feature-settings: "tnum" 1;
+  font-variant-numeric: tabular-nums;
 }
 .section--forest .eyebrow__num,
 .process .eyebrow__num,
@@ -68,13 +74,14 @@ em { font-style: italic; }
 .tab-num {
   font-family: var(--f-mono);
   font-feature-settings: "tnum" 1;
+  font-variant-numeric: tabular-nums;
   letter-spacing: 0;
 }
 .brick-italic {
   color: var(--accent-italic);
   font-family: var(--f-display);
   font-style: italic;
-  font-weight: var(--fw-sem);
+  font-weight: 800;
 }
 
 /* --- Layout helpers --- */
@@ -97,9 +104,9 @@ em { font-style: italic; }
   align-items: center;
   justify-content: center;
   gap: var(--sp-2);
-  font-family: var(--f-condensed);
-  font-weight: var(--fw-bld);
-  font-size: var(--fs-lg);
+  font-family: var(--f-body);
+  font-weight: 700;
+  font-size: var(--fs-base);
   text-transform: uppercase;
   letter-spacing: var(--ls-wide);
   text-decoration: none;
@@ -376,9 +383,9 @@ em { font-style: italic; }
   min-height: 92vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: var(--sp-24) var(--container-pad) var(--sp-16);
+  justify-content: flex-start;
+  text-align: left;
+  padding: var(--sp-32) var(--container-pad) var(--sp-16);
   color: var(--text-inverse);
   background-color: var(--c-forest-dark);
   background-image:
@@ -394,34 +401,41 @@ em { font-style: italic; }
 .hero[data-bg="dark"] { }
 
 .hero__inner {
-  max-width: 960px;
+  width: 100%;
+  max-width: var(--container-max);
   margin-inline: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--sp-6);
 }
+.hero__inner > * { max-width: 720px; }
 .hero .eyebrow { color: var(--accent); }
 .hero h1 {
   color: var(--text-inverse);
   font-size: var(--fs-7xl);
+  font-weight: 900;
+  letter-spacing: -0.03em;
 }
 .hero h1 em {
   display: inline-block;
   color: var(--accent);
   font-style: italic;
+  font-weight: 900;
 }
 .hero__subhead {
-  font-family: var(--f-condensed);
+  font-family: var(--f-body);
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: var(--ls-wide);
-  font-size: var(--fs-lg);
+  font-size: var(--fs-base);
   color: var(--text-inverse);
-  opacity: 0.88;
-  max-width: 36ch;
+  opacity: 0.85;
+  max-width: 48ch;
 }
 .hero__lede {
   font-family: var(--f-body);
+  font-weight: 400;
   font-size: var(--fs-lg);
   line-height: var(--lh-relaxed);
   color: var(--text-inverse);
@@ -433,13 +447,14 @@ em { font-style: italic; }
   display: flex;
   flex-wrap: wrap;
   gap: var(--sp-4);
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: var(--sp-4);
+  max-width: none;
 }
 @media (max-width: 640px) {
   .hero { min-height: 84vh; padding: calc(var(--header-h-m) + var(--sp-12)) var(--container-pad) var(--sp-12); }
   .hero h1 { font-size: clamp(2.5rem, 9vw + 0.5rem, 4rem); }
-  .hero__subhead { font-size: var(--fs-base); }
+  .hero__subhead { font-size: var(--fs-sm); }
 }
 
 /* ============================================================
