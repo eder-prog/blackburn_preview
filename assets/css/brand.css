@@ -457,60 +457,7 @@ em { font-style: italic; }
   .hero__subhead { font-size: var(--fs-sm); }
 }
 
-/* ============================================================
-   TRUST BAND
-   ============================================================ */
-.trust {
-  background: var(--bg-primary);
-  border-top: 1px solid var(--accent-italic);
-  border-bottom: 1px solid var(--accent-italic);
-  padding-block: var(--sp-12);
-}
-.trust__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--sp-6);
-  text-align: center;
-}
-.trust__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--sp-3);
-  padding: var(--sp-4) var(--sp-2);
-  border-radius: var(--r-md);
-  transition: background-color var(--d-normal) var(--ease-out);
-}
-.trust__item:hover { background-color: rgba(232, 93, 46, 0.08); }
-.trust__icon {
-  width: 56px; height: 56px;
-  border-radius: var(--r-full);
-  border: 2px solid var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--c-forest);
-  transition: background-color var(--d-normal) var(--ease-out), color var(--d-normal) var(--ease-out);
-}
-.trust__item:hover .trust__icon { background-color: var(--c-saffron); color: var(--c-walnut); }
-.trust__icon svg { width: 28px; height: 28px; }
-.trust__label {
-  font-family: var(--f-condensed);
-  font-size: var(--fs-base);
-  text-transform: uppercase;
-  letter-spacing: var(--ls-wide);
-  color: var(--text-primary);
-}
-.trust__detail {
-  font-size: var(--fs-sm);
-  color: var(--text-secondary);
-}
-@media (max-width: 768px) {
-  .trust__grid { grid-template-columns: repeat(2, 1fr); gap: var(--sp-10) var(--sp-4); }
-}
-@media (max-width: 480px) {
-  .trust__grid { grid-template-columns: 1fr; }
-}
+/* TRUST BAND removed (commit 17). License + LLC info now lives in footer only. */
 
 /* ============================================================
    SERVICES GRID
