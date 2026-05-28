@@ -21,25 +21,25 @@ a { color: inherit; }
 button { font: inherit; cursor: pointer; }
 :focus-visible { outline: none; box-shadow: var(--sh-focus); border-radius: var(--r-sm); }
 
-/* --- Typography defaults (Inter universal) --- */
+/* --- Typography defaults (Inter universal, semibold display) --- */
 h1, h2 {
   font-family: var(--f-display);
   font-style: normal;
-  font-weight: 900;
+  font-weight: 600;
   line-height: var(--lh-tight);
   letter-spacing: var(--ls-tight);
   margin: 0;
 }
 h1 em, h2 em {
   font-style: italic;
-  font-weight: 900;
+  font-weight: 600;
   color: var(--accent);
 }
 h1 { font-size: var(--fs-6xl); }
 h2 { font-size: var(--fs-4xl); }
 h3, h4, h5, h6 {
   font-family: var(--f-body);
-  font-weight: var(--fw-bld);
+  font-weight: 600;
   margin: 0;
 }
 h3 { font-size: var(--fs-2xl); line-height: var(--lh-snug); }
@@ -52,7 +52,7 @@ em { font-style: italic; }
   align-items: baseline;
   gap: var(--sp-2);
   font-family: var(--f-condensed);
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--fs-sm);
   text-transform: uppercase;
   letter-spacing: var(--ls-wider);
@@ -81,7 +81,7 @@ em { font-style: italic; }
   color: var(--accent-italic);
   font-family: var(--f-display);
   font-style: italic;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 /* --- Layout helpers --- */
@@ -105,7 +105,7 @@ em { font-style: italic; }
   justify-content: center;
   gap: var(--sp-2);
   font-family: var(--f-body);
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--fs-base);
   text-transform: uppercase;
   letter-spacing: var(--ls-wide);
@@ -414,18 +414,18 @@ em { font-style: italic; }
 .hero h1 {
   color: var(--text-inverse);
   font-size: var(--fs-7xl);
-  font-weight: 900;
-  letter-spacing: -0.03em;
+  font-weight: 600;
+  letter-spacing: -0.025em;
 }
 .hero h1 em {
   display: inline-block;
   color: var(--accent);
   font-style: italic;
-  font-weight: 900;
+  font-weight: 600;
 }
 .hero__subhead {
   font-family: var(--f-body);
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: var(--ls-wide);
   font-size: var(--fs-base);
