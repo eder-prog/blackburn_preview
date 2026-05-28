@@ -1,0 +1,9 @@
+.git
+.gitignore
+.vercelignore
+node_modules
+.DS_Store
+Thumbs.db
+*.local
+.scratch
+LIGHTHOUSE-CHECKLIST.md

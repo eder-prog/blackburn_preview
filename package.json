@@ -1,0 +1,30 @@
+{
+  "name": "blackburn-preview",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blackburn Construction — owner-run general contractor landing page (Gaston, SC). Vanilla HTML/CSS/JS static site.",
+  "keywords": [
+    "blackburn-construction",
+    "general-contractor",
+    "south-carolina",
+    "gaston",
+    "lexington-county",
+    "landing-page",
+    "static-site"
+  ],
+  "homepage": "https://github.com/eder-prog/blackburn_preview",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eder-prog/blackburn_preview.git"
+  },
+  "author": "Growth Solutions US <team@growthsolutionsus.com>",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000",
+    "build": "echo \"Static site — no build step needed. Vercel auto-detects HTML root.\""
+  }
+}
