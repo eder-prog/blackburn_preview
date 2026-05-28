@@ -14,8 +14,8 @@
   --c-orange-light:  #F08456;     /* Lighter orange for soft fills */
   --c-rust:          #8A1F1F;     /* Secondary accent — italic emphasis, hairlines */
   --c-rust-dark:     #6D1818;
-  --c-cream:         #F5F1E8;     /* Primary light background */
-  --c-cream-dark:    #E8E0CC;
+  --c-cream:         #FFFFFF;     /* Primary light background (was cream — now pure white) */
+  --c-cream-dark:    #F2F2F0;
   --c-charcoal:      #1A1F2C;     /* Strong text, photo frames */
   --c-slate:         #5A6677;     /* Secondary text, captions */
 
@@ -34,7 +34,7 @@
 
   /* --- Semantic tokens (light theme = default) --- */
   --bg-primary:        var(--c-cream);
-  --bg-secondary:      #FAF7EE;
+  --bg-secondary:      #F7F7F5;
   --bg-elevated:       #FFFFFF;
   --bg-inverse:        var(--c-navy);
   --bg-inverse-darker: var(--c-navy-dark);
@@ -51,7 +51,7 @@
   --accent:            var(--c-orange);
   --accent-hover:      var(--c-orange-dark);
   --accent-fg:         #FFFFFF;
-  --accent-italic:     var(--c-rust);
+  --accent-italic:     var(--c-navy);
 
   /* --- Typography — Inter universal --- */
   --f-display:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
