@@ -18,9 +18,13 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="assets/img/og-share.jpg" />
 
+<!-- Favicon (vector — scales to all sizes) -->
+<link rel="icon" type="image/svg+xml" href="assets/img/logos/v2/icon-on-saffron.svg" />
+<link rel="apple-touch-icon" href="assets/img/logos/v2/icon-on-saffron.svg" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@1,9..144,600;1,9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@1,9..144,600;1,9..144,700;1,9..144,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/brand.css">
@@ -31,10 +35,20 @@
 <header class="site-header over-dark" role="banner">
   <div class="site-header__inner">
     <a href="#top" class="brand-lockup" aria-label="Blackburn Construction — home">
-      <span class="brand-monogram" aria-hidden="true">JB</span>
-      <span class="brand-words">
-        <span class="brand-words__name">BLACKBURN</span>
-        <span class="brand-words__sub">Construction Co.</span>
+      <!-- Brand icon (house + JB monogram inside) — adaptive via currentColor -->
+      <span class="brand-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="square" stroke-linejoin="miter">
+          <path d="M6 30 L32 8 L58 30"/>
+          <path d="M12 28 V56 H52 V28"/>
+          <line x1="6" y1="56" x2="58" y2="56" stroke-width="2"/>
+          <path d="M26 38 H36 Q40 38 40 42 Q40 45 36 45 Q40 45 40 49 Q40 52 36 52 H26 Z M26 38 V52" stroke-width="2.5" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <!-- Wordmark (Fraunces italic via inline SVG so font loads from Google Fonts link) -->
+      <span class="brand-wordmark" aria-hidden="true">
+        <svg viewBox="0 0 480 100" preserveAspectRatio="xMinYMid meet">
+          <text x="0" y="78" font-family="'Fraunces', 'Iowan Old Style', Georgia, serif" font-style="italic" font-weight="900" font-size="84" letter-spacing="-3.5" fill="currentColor">blackburn</text>
+        </svg>
       </span>
     </a>
 
@@ -426,9 +440,10 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <span class="footer__monogram" aria-hidden="true">JB</span>
-        <span class="footer__name">BLACKBURN</span>
-        <span class="footer__sub">Construction Co.</span>
+        <object class="footer__banner" type="image/svg+xml" data="assets/img/logos/v2/banner-forest.svg" aria-label="Blackburn Construction — General Contractor — Gaston, SC">
+          <!-- Fallback if SVG fails: text-only brand block -->
+          <span class="footer__name">BLACKBURN Construction Co.</span>
+        </object>
         <p class="footer__tag">Built here. Built right. <span class="tab-num">Since 2020.</span></p>
         <p class="footer__license tab-num">SC LLC #1033937 · Good Standing</p>
         <p class="footer__license tab-num">SC GC LIC #<span data-pending="true">[TODO]</span></p>
