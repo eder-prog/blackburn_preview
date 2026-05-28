@@ -1,18 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 132" width="480" height="132" preserveAspectRatio="xMidYMid meet">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 132" width="480" height="132" preserveAspectRatio="xMidYMid meet">
   <defs><clipPath id="bc"><rect width="480" height="132"></rect></clipPath></defs>
   <g clip-path="url(#bc)">
-    <rect width="480" height="132" fill="#EFE7D5"></rect>
-    <polygon points="-20,132 220,132 150,96 -20,96" fill="#8C3A2B"></polygon>
-    <polygon points="-20,132 120,132 80,96 -20,96" fill="#D9A431"></polygon>
-    <polygon points="480,0 432,0 480,48" fill="#8C3A2B"></polygon>
-    <g transform="translate(22,30) scale(1)" stroke="#1F3A2D" stroke-width="3" fill="none" stroke-linecap="square" stroke-linejoin="miter">
+    <rect width="480" height="132" fill="#F5F1E8"></rect>
+    <polygon points="-20,132 220,132 150,96 -20,96" fill="#8A1F1F"></polygon>
+    <polygon points="-20,132 120,132 80,96 -20,96" fill="#E85D2E"></polygon>
+    <polygon points="480,0 432,0 480,48" fill="#8A1F1F"></polygon>
+    <g transform="translate(22,30) scale(1)" stroke="#13294B" stroke-width="3" fill="none" stroke-linecap="square" stroke-linejoin="miter">
     <path d="M6 30 L32 8 L58 30"></path>
     <path d="M12 28 V56 H52 V28"></path>
     <line x1="6" y1="56" x2="58" y2="56" stroke-width="2"></line>
     <path d="M26 38 H36 Q40 38 40 42 Q40 45 36 45 Q40 45 40 49 Q40 52 36 52 H26 Z M26 38 V52" stroke-width="2.5" stroke-linejoin="round"></path>
   </g>
-    <line x1="116" y1="96" x2="386" y2="96" stroke="#1F3A2D" stroke-opacity="0.3" stroke-width="1"></line>
-    <text x="116" y="80" font-family="&#39;Fraunces&#39;, &#39;Iowan Old Style&#39;, Georgia, serif" font-style="italic" font-weight="900" font-size="64" letter-spacing="-3" fill="#1F3A2D">blackburn</text>
-    <text x="116" y="114" font-family="&#39;Anton&#39;, &#39;Oswald&#39;, &#39;Arial Narrow&#39;, sans-serif" letter-spacing="1.4" font-size="9" fill="#1F3A2D" fill-opacity="0.92" text-transform="uppercase">GENERAL CONTRACTOR  ·  GASTON SC</text>
+    <line x1="116" y1="96" x2="386" y2="96" stroke="#13294B" stroke-opacity="0.3" stroke-width="1"></line>
+    <text x="116" y="80" font-family="&#39;Fraunces&#39;, &#39;Iowan Old Style&#39;, Georgia, serif" font-style="italic" font-weight="900" font-size="64" letter-spacing="-3" fill="#13294B">blackburn</text>
+    <text x="116" y="114" font-family="&#39;Anton&#39;, &#39;Oswald&#39;, &#39;Arial Narrow&#39;, sans-serif" letter-spacing="1.4" font-size="9" fill="#13294B" fill-opacity="0.92" text-transform="uppercase">GENERAL CONTRACTOR  Â·  GASTON SC</text>
   </g>
 </svg>

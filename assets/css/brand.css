@@ -43,7 +43,9 @@ p { margin: 0; }
 em { font-style: italic; }
 
 .eyebrow {
-  display: inline-block;
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--sp-2);
   font-family: var(--f-condensed);
   font-weight: var(--fw-reg);
   font-size: var(--fs-sm);
@@ -52,6 +54,17 @@ em { font-style: italic; }
   color: var(--accent);
   margin: 0;
 }
+.eyebrow__num {
+  font-family: var(--f-mono);
+  font-weight: var(--fw-med);
+  font-size: var(--fs-sm);
+  letter-spacing: 0;
+  color: var(--accent-italic);
+  font-feature-settings: "tnum" 1;
+}
+.section--forest .eyebrow__num,
+.process .eyebrow__num,
+.final-cta .eyebrow__num { color: var(--c-orange-light); }
 .tab-num {
   font-family: var(--f-mono);
   font-feature-settings: "tnum" 1;
@@ -369,8 +382,8 @@ em { font-style: italic; }
   color: var(--text-inverse);
   background-color: var(--c-forest-dark);
   background-image:
-    /* darken overlay — preserves Field House mood + ensures text contrast */
-    linear-gradient(180deg, rgba(20, 39, 30, 0.45) 0%, rgba(20, 39, 30, 0.70) 60%, rgba(20, 39, 30, 0.92) 100%),
+    /* darken overlay — Navy with strong base for text contrast */
+    linear-gradient(180deg, rgba(10, 23, 41, 0.50) 0%, rgba(10, 23, 41, 0.75) 60%, rgba(10, 23, 41, 0.94) 100%),
     /* real photo */
     url('../img/hero-jobsite.jpg');
   background-size: cover;
@@ -779,7 +792,7 @@ em { font-style: italic; }
   color: var(--text-inverse);
   background-color: var(--bg-inverse);
   background-image:
-    linear-gradient(180deg, rgba(31, 58, 45, 0.86) 0%, rgba(20, 39, 30, 0.94) 100%),
+    linear-gradient(180deg, rgba(19, 41, 75, 0.88) 0%, rgba(10, 23, 41, 0.96) 100%),
     url('../img/jobsite-wide.jpg');
   background-size: cover;
   background-position: center;
